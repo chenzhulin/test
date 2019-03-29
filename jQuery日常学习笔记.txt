@@ -1,0 +1,81 @@
+$("document").ready(function(){});  文档加载完后再执行里面的代码块写法一
+$(function (){});  文档加载完后再执行里面的代码块写法二
+JQ对象.css("属性名","属性的值");   设置JQ对象的CSS样式
+JQ对象.mouseenter(function(){});  鼠标经过当前元素会触发mouseenter事件
+JQ对象.mouseover(function(){});  鼠标经过当前元素并且他的子元素也会触发mouseenter事件
+JQ对象.children("标签名字");  获取JQ对象中所有子节点中指定标签
+JQ对象.find("元素的名字");  获取JQ的后代元素相当于(ul li)
+JQ对象.mousedown(function(){});  点击JQ对象,将会执行这个函数
+jQ对象.resize();   窗口大小发生改变会执行此函数
+JQ对象.sibling("元素名字");  查找兄弟元素,不包括自己本身
+JQ对象.mouseover(function(){});  鼠标移到此JQ对象,将会执行此函数
+JQ对象.mouseout(function(){});  鼠标移出此JQ对象,将会执行此函数
+JQ对象.click(function(){});  鼠标点击这JQ对象,将会执行函数
+JQ对象.next();  获取到JQ对象的下一个节点
+JQ对象.parent();  获取JQ对象的父亲节点
+JQ对象.hide();  JQ对象隐藏
+JQ对象.slideDown(秒数)  往下滑这个过程执行多少秒
+JQ对象.slidUp(秒数)  往上滑这个过程执行多少秒
+JQ对象.index();  获取JQ对象在所有兄弟标签里所指定的下标
+("id选择器:eq(下标数)");  获取元素是指定的下标,筛选选择器
+JQ对象.addCalss();  给JQ对象设置类;
+JQ对象.removeClass();  JQ对象移除一个类
+JQ对象.hasClass();  判断JQ对象有没有这个类
+JQ对象.toggleClass();  JQ对象切换类,JQ对象有这个类,那么就让他没有这个类,JQ对象没有这个类,那么就让他有这个类
+JQ对象.text("");  修改JQ对象的内容
+JQ对象.prop();  设置行内样式的值和属性,行内样式的值为布尔值的时候用这个
+JQ对象.show();  JQ对象显示,有两个参数,一个是时间一个是回调函数
+JQ对象.slideDown();  JQ对象的滑入动画效果,有两个参数,一个是时间一个是回调函数
+JQ对象.slideUp();  JQ对象的滑出动画效果,有两个参数,一个是时间一个回调函数
+JQ对象.slideToggle();  JQ对象滑动画效果切换
+JQ对象.fadeIn();  JQ对象淡入动画效果,有两个参数,一个是时间一个是回调函数
+JQ对象.fadeOut();  JQ对象淡出动画效果,有两个参数,一个是时间一个是回调函数
+JQ对象.fadeToggle();  JQ对象淡动画效果切换
+JQ对象.animate();  有三个参数,第一个参数样式对象,第二个参数是时间,第三个参数是动画效果(swing||linear)
+JQ对象.stop();  停止当前动画效果,有两个参数两个参数都是布尔型的值,一个是是否停止当前动画,另一个是跳转到动画的最终效果
+JQ对象.append('节点');   往JQ对象插入节点
+$('节点').appendTo('父节点');  往节点最后面添加元素
+JQ对象.prepend('节点');  往JQ对象的最前面添加节点
+('子节点').prependTo('父节点');  往JQ对象的最前面添加节点
+JQ对象.after('节点'); 在JQ对象后面添加节点(添加兄弟节点);
+JQ对象.before('节点');  在JQ对象前面添加节点(添加兄弟节点);
+JQ对象.empty();  移除JQ对象的所有子节点
+JQ对象.remove();  删除JQ对象
+JQ对象.clone();  复制JQ对象(不传参数也是深度复制),false不会复制事件,true会复制事件
+JQ对象.val();  获取JQ对象的值
+jQ对象.width();  获取jQ对象的宽度;
+jQ对象.height();  获取jQ对象的高度
+jQ对象.innerWidth();  padding加宽度
+jQ对象.outerWidth();  padding加border加宽度
+jQ对象.outerWidth(true);  padding加border加宽度加margin
+jQ对象.scroll();  移动滚动条时触发此函数
+jQ对象.scrollTop();  获取被卷去的高度
+jQ对象.scrollLeft();  获取被卷去的宽度 
+jQ对象.offset();  jQ对象距离document的距离(top 和 left);
+jQ对象.position();  jQ对象距离有定位的父元素的距离(top 和 left);
+jQ对象.delegate("子节点",'绑定事件','函数');  给jQ对象所有子节点绑定事件并设置函数
+jQ对象.on("事件","选择器",function (){});  给jQ对象下选择器选择的子节点注册事件
+jQ对象.trigger("解除事件");  jQ对象解除事件
+e.preventDefault();  阻止浏览器默认行为
+e.stopPropagation();  阻止冒泡
+return false;  既能阻止浏览器默认行为,也能阻止冒泡
+jQ对象.prev();  获取同级jQ对象的前一个元素
+jQ对象.prevAll();  获取同级jQ对象的前面所有元素
+jQ对象.addClass();  给jQ对象设置类名
+jQ对象.removeClass();  移除jQ对象的类名
+jQ对象.end();  返回jQ对象的前一个对象
+jQ对象.each(function ("DOM对象对应的下标","下标对应的DOM对象"){});  在函数中可以输出伪数组元素下标和下标对应的元素
+$.noConflict();  释放$的控制权
+("选择器").draggable({handle:"指定能拖住整个元素的元素"})  拖动元素
+("选择器").sortable();  指定的子元素能排序
+("选择器").resizable({})  元素只可以拖拉(可以设定拖动的方向)  
+jQ对象.find();  查找要选择的元素,是一个数组
+jQ对象.attr("属性名","属性值");  可以改变jQ对象的属性值
+jQ对象.data("值的属性"||{"属性名":"属性值"});  获取jQ对象的属性值或设置jQ对象的属性值
+jQ对象.on('hidden.bs.modal',function(e){})  模态框隐藏之后要做的代码
+jQ对象.on('shown.bs.modal',function(e){})  模态框打开之前要做的
+jQ对象.ont(jQ对象);  获取所有jQ对象除了后面的jQ对象
+jQ对象.serialize()  获取表单提交的数据
+$.ajax({type:'提交方式',url:"{:url('模块/控制器/操作')}",data:'数据',dataType:'数据类型',},success:function (data){}})  AJAX提交数据
+jQ对象.serialize();  数据序列化
+jq对象.substring(开始几位,结束几位);  获取指定区间的字符
